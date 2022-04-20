@@ -127,10 +127,15 @@ z-index: 0;
           Uploaded Image<img id="output">
           
     </Body>
+
     <script>
       FileValidation = (event) => {
           var image = document.getElementById('output');
       image.src = URL.createObjectURL(event.target.files[0]);
+     
+      image.style.width = '250px';
+      image.style.height = '300px';
+image.style.alignContent='left'
           const fi = document.getElementById("file");
           if (fi.files.length > 0) {
               for (const i = 0; i <= fi.files.length - 1; i++) {
@@ -140,4 +145,5 @@ z-index: 0;
   }
   }
   </script>
+  </div>
 </html>
