@@ -1,4 +1,3 @@
-#A Gender and Age Detection program by Mahesh Sawant
 
 import cv2
 import math
@@ -38,7 +37,7 @@ genderProto="gender_deploy.prototxt"
 genderModel="gender_net.caffemodel"
 
 MODEL_MEAN_VALUES=(78.4263377603, 87.7689143744, 114.895847746)
-ageList=['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
+ageList=['(0-2)', '(3-6)', '(8-13)', '(14-20)', '(25-32)', '(38-48)', '(49-53)', '(70-80)','(80-90)','(90-100)']
 genderList=['Male','Female']
 
 faceNet=cv2.dnn.readNet(faceModel,faceProto)
